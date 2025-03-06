@@ -1,0 +1,43 @@
+{
+  "name": "netsuite-react-embedded-suitelet",
+  "version": "0.0.1",
+  "description": "An example NetSuite SuiteLet to embed a React app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite serve --config vite.config.dev.mjs",
+    "build": "vite build --config vite.config.prod.mjs",
+    "back": "npm run tailwind && webpack --mode production",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "tailwind": "npx tailwindcss -i ./src/style.css -o ./src/app.css",
+    "tailwind:watch": "npx tailwindcss -i ./src/style.css -o ./src/app.css --watch"
+  },
+  "keywords": [],
+  "author": "j-Riv <jriv@suavecito.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.10",
+    "@vitejs/plugin-react": "^4.3.4",
+    "highlight.js": "^11.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-syntax-highlighter": "^15.6.1",
+    "vite": "^6.2.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react": "^7.36.1",
+    "globals": "^15.9.0",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^4.0.10",
+    "typescript": "5.6.2",
+    "typescript-eslint": "^8.6.0",
+    "vite-plugin-html": "^3.2.2"
+  }
+}
