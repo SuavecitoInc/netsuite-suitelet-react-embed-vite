@@ -11,7 +11,7 @@ export const fetchAPI = async <P, R>(payload: P) => {
     },
     body: JSON.stringify({ ...payload }),
   });
-  const data = (await response.json()) as R;
+  const data: R = await response.json();
 
   return data;
 };
