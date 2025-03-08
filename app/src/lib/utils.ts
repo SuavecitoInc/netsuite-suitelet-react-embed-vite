@@ -1,6 +1,4 @@
-import { endpoint } from './const';
-
-export const fetchAPI = async <P, R>(payload: P) => {
+export const fetchAPI = async <P, R>(endpoint: string, payload: P) => {
   console.log('ENDPOINT', endpoint);
   console.log('PAYLOAD', payload);
   const response = await fetch(endpoint, {
